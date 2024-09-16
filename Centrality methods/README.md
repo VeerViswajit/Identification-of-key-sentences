@@ -28,3 +28,6 @@ The paper evaluated various centrality measures for keyphrase extraction. While 
 
 ### Best Use Case:
 This methodology is ideal for situations where we don't need to train a model with a curated dataset to perform well for a particular use case.
+
+###Enhanced Graph Weighting Using BERT( code in semantic_graph_textrank.py )
+In this implementation, we improved the graph weight assignment algorithm by leveraging contextual embeddings from BERT. Instead of assigning edge weights based solely on the number of co-occurrences between word pairs, we use the cosine similarity between BERT-generated embeddings to capture the semantic relationship between words. This allows for a more nuanced and meaningful representation of the connections between words in the co-occurrence graph. Although we primarily focused on TextRank for keyphrase extraction, this approach enhances the graph formation process, providing a more context-aware framework for extracting key phrases.
